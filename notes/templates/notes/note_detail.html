@@ -1,0 +1,20 @@
+<!-- notes/templates/notes/note_detail.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+Sticky Note - {{ note.title }}
+{% endblock title %}
+
+{% block content %}
+<div class="note-detail-card">
+    <h2>{{ note.title }}</h2>
+    <p class="note-content">{{ note.content }}</p>
+    <p class="note-timestamp"><strong>Created at:</strong> {{ note.created_at|date:"F j, Y, P" }}</p>
+
+    <div class="note-actions">
+        <a href="{% url 'note_update' pk=note.pk %}" class="btn edit-btn">Edit Note</a>
+        <a href="{% url 'note_delete' pk=note.pk %}" class="btn delete-btn">Delete Note</a>
+        <a href="{% url 'note_list' %}" class="btn back-btn">Back to Notes</a>
+    </div>
+</div>
+{% endblock content %}
