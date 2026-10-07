@@ -8,4 +8,5 @@ class Note(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
+        """Return the note title for readable display in the admin."""
         return self.title
