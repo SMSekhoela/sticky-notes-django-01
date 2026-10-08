@@ -4,6 +4,7 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
+    """Create the initial database table for notes."""
 
     initial = True
 
