@@ -7,8 +7,15 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 import os
-import sys  
-sys.path.insert(0, os.path.abspath('..'))
+import sys
+from pathlib import Path
+
+import django
+
+project_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(project_root))
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sticky_notes.settings')
+django.setup()
 
 project = 'Notes'
 copyright = '2026, Sello'

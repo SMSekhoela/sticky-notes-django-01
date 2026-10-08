@@ -19,6 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="manage module" href="manage.html" />
     <link rel="prev" title="notes package" href="notes.html" /> 
 </head>
 
@@ -51,17 +52,19 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="notes.html#submodules">Submodules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.admin">notes.admin module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-apps-module">notes.apps module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-forms-module">notes.forms module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-models-module">notes.models module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-tests-module">notes.tests module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-urls-module">notes.urls module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html#notes-views-module">notes.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.apps">notes.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.forms">notes.forms module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.models">notes.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.tests">notes.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.urls">notes.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes.views">notes.views module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="notes.html#module-notes">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sticky_notes.html">sticky_notes package</a></li>
 </ul>
 
         </div>
@@ -95,8 +98,30 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 </section>
-<section id="notes-migrations-0001-initial-module">
-<h2>notes.migrations.0001_initial module<a class="headerlink" href="#notes-migrations-0001-initial-module" title="Link to this heading"></a></h2>
+<section id="module-notes.migrations.0001_initial">
+<span id="notes-migrations-0001-initial-module"></span><h2>notes.migrations.0001_initial module<a class="headerlink" href="#module-notes.migrations.0001_initial" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="notes.migrations.0001_initial.Migration">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">notes.migrations.0001_initial.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/notes/migrations/0001_initial.html#Migration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#notes.migrations.0001_initial.Migration" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Migration</span></code></p>
+<p>Create the initial database table for notes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="notes.migrations.0001_initial.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#notes.migrations.0001_initial.Migration.dependencies" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="notes.migrations.0001_initial.Migration.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></span><a class="headerlink" href="#notes.migrations.0001_initial.Migration.initial" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="notes.migrations.0001_initial.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='Note',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.BigAutoField&gt;),</span> <span class="pre">('title',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('content',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('updated_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;)]&gt;]</span></span><a class="headerlink" href="#notes.migrations.0001_initial.Migration.operations" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-notes.migrations">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-notes.migrations" title="Link to this heading"></a></h2>
@@ -108,6 +133,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="notes.html" class="btn btn-neutral float-left" title="notes package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="manage.html" class="btn btn-neutral float-right" title="manage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
